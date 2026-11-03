@@ -1,0 +1,63 @@
+/* Design tokens copied from the Figma library variables.
+   Same names as in Figma, so designer and developer speak the same language. */
+:root {
+  /* Color */
+  --sds-color-background-default-default: #ffffff;
+  --sds-color-background-brand-default: #4F73FF;
+  --sds-color-background-neutral-tertiary: #e3e3e3;
+  --sds-color-text-default-default: #1e1e1e;
+  --sds-color-text-default-tertiary: #b3b3b3;
+  --sds-color-text-neutral-tertiary: #767676;
+  --sds-color-text-brand-on-brand: #f5f5f5;
+  --sds-color-border-default-default: #d9d9d9;
+  --sds-color-border-brand-default: #4F73FF;
+  --sds-color-border-brand-tertiary: #757575;
+  --sds-color-border-neutral-secondary: #767676;
+
+  /* Spacing, radius, stroke */
+  --sds-size-space-100: 4px;
+  --sds-size-space-200: 8px;
+  --sds-size-space-300: 12px;
+  --sds-size-space-400: 16px;
+  --sds-size-space-800: 32px;
+  --sds-size-space-1600: 64px;
+  --sds-size-radius-100: 4px;
+  --sds-size-radius-200: 8px;
+  --sds-size-stroke-border: 1px;
+
+  /* Typography */
+  --sds-typography-body-font-family: 'Inter', system-ui, sans-serif;
+  --sds-typography-body-font-weight-regular: 400;
+  --sds-typography-body-size-medium: 16px;
+  --sds-typography-body-size-small: 14px;
+  --sds-typography-title-page-size-base: 48px;
+  --sds-typography-title-hero-size: 72px;
+  --sds-typography-title-font-weight: 700;
+}
+
+/* ---- Console (F5) tokens, from the "My Bot Risk" Figma file ---- */
+:root {
+  --color-n0-white: #ffffff;
+  --color-n100-athens: #f7f8fa;
+  --color-n200-catskill: #e6e9f3;
+  --color-n300-haze: #c6ccda;
+  --color-n400-gull: #9ea7b8;
+  --color-n500-raven: #6c778c;
+  --color-n600-blue-zodiac: #0f1e57;
+  --color-dodger-blue: #4a67f5;
+  --color-dodger-light: #dbe2ff;
+  --color-brand: #e4002b;
+  --color-error: var(--color-brand);
+  /* Not read from Figma, estimated from the screenshot: confirm with your design */
+  --color-link: #4a67f5;
+  --color-badge-new: #7b61d9;
+}
+
+/* ---- Bot report tokens (chart colors, from Figma variables) ---- */
+:root {
+  --viz-froly: #f88080; --viz-amber: #ffc400; --viz-gigas: #5242aa; --viz-chetwode: #998dd9;
+  --viz-red-violet: #a611a5; --viz-lavender-magenta: #f080db; --viz-mai-tai: #b36106; --viz-pizazz: #ff8b01;
+  --viz-night-shadz: #c44456; --viz-sushi: #7cab36; --viz-malibu: #59bcfa; --viz-cornflower: #6a9dff;
+  --viz-blue-ribbon: #0065ff; --viz-forest-green: #228b22; --color-purple-light: #edebfa;
+  --viz-turquoise: #4bc7c2; --viz-bright-sun: #ffc52b;
+}

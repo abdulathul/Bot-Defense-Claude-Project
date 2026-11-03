@@ -1,0 +1,2 @@
+.card { padding: 20px; background: var(--color-n0-white); border: 1px solid var(--color-n200-catskill); border-radius: 4px; }
+.title { display: flex; align-items: center; gap: 6px; margin: 0 0 16px; font-size: 14px; line-height: 20px; font-weight: 500; }

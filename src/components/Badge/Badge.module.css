@@ -1,0 +1,4 @@
+.badge { padding: 0 4px; border-radius: 8px; font-size: 11px; line-height: 16px; white-space: nowrap; }
+.default { background: var(--color-dodger-light); color: var(--color-n600-blue-zodiac); }
+.new { background: var(--color-badge-new); color: var(--color-n0-white); }
+.unavailable { background: var(--color-n400-gull); color: var(--color-n0-white); }

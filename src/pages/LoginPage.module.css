@@ -1,0 +1,40 @@
+.page { display: flex; min-height: 100%; }
+.brand {
+  flex: 0 0 50%; display: flex; flex-direction: column; justify-content: center;
+  gap: var(--sds-size-space-400); padding: var(--sds-size-space-1600);
+  background: #F7F8FA;
+  color: var(--sds-color-text-default-default);
+}
+.brand p { margin: 0; }
+.hero {
+  margin: 0; font-size: var(--sds-typography-title-hero-size);
+  font-weight: var(--sds-typography-title-font-weight); line-height: 1.2; letter-spacing: -0.03em; color: #000;
+}
+.formPanel { flex: 1; display: flex; align-items: center; justify-content: center; padding: var(--sds-size-space-1600); }
+.form { display: flex; flex-direction: column; gap: var(--sds-size-space-800); width: 100%; max-width: 400px; }
+.heading { display: flex; flex-direction: column; gap: var(--sds-size-space-100); }
+.title {
+  margin: 0; font-size: var(--sds-typography-title-page-size-base);
+  font-weight: var(--sds-typography-title-font-weight); line-height: 1.2; letter-spacing: -0.02em;
+}
+.muted { margin: 0; color: var(--sds-color-text-neutral-tertiary); }
+.fields { display: flex; flex-direction: column; gap: var(--sds-size-space-400); }
+.options { display: flex; align-items: center; justify-content: space-between; }
+.divider {
+  display: flex; align-items: center; gap: var(--sds-size-space-300);
+  color: var(--sds-color-text-neutral-tertiary); font-size: var(--sds-typography-body-size-small);
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; border-top: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+}
+.alternatives { display: flex; flex-direction: column; gap: var(--sds-size-space-300); }
+.signup {
+  margin: 0; text-align: center; color: var(--sds-color-text-neutral-tertiary);
+  font-size: var(--sds-typography-body-size-small);
+}
+
+/* Not in the Figma file: on narrow screens, hide the brand panel and give the form full width */
+@media (max-width: 900px) {
+  .brand { display: none; }
+  .formPanel { padding: var(--sds-size-space-400); }
+}

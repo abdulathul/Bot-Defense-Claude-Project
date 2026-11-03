@@ -1,0 +1,4 @@
+.button { display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 16px; border-radius: 4px; font: inherit; font-size: 14px; cursor: pointer; border: 1px solid var(--color-dodger-blue); }
+.primary { background: var(--color-dodger-blue); color: var(--color-n0-white); }
+.secondary { background: var(--color-n0-white); color: var(--color-dodger-blue); }
+.button:hover { filter: brightness(0.95); }

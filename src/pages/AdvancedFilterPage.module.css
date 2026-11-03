@@ -1,0 +1,12 @@
+.page { min-height: 100%; display: flex; flex-direction: column; background: var(--color-n0-white); color: var(--color-n600-blue-zodiac); }
+.header { padding: 16px; border-bottom: 1px solid var(--color-n200-catskill); }
+.header h1 { margin: 0; font-size: 18px; line-height: 26px; font-weight: 400; }
+.body { flex: 1; display: flex; flex-direction: column; gap: 16px; padding: 16px; max-width: 1406px; width: 100%; }
+.card { padding: 20px; border: 1px solid var(--color-n200-catskill); border-radius: 4px; overflow-x: auto; }
+.h2 { margin: 0 0 16px; font-size: 14px; line-height: 20px; font-weight: 700; }
+.add { display: flex; gap: 8px; margin-top: 16px; }
+.buttonIcon { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.text { margin: 0 0 12px; font-size: 12px; line-height: 18px; }
+.disclaimer { margin: 0 0 4px; font-size: 12px; font-weight: 700; }
+.code { margin: 12px 0 0; padding: 12px; background: var(--color-n100-athens); border-radius: 4px; font-size: 12px; white-space: pre-wrap; }
+.footer { display: flex; justify-content: space-between; padding: 16px; border-top: 1px solid var(--color-n200-catskill); }

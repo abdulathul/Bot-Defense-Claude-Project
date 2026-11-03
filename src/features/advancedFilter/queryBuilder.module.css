@@ -1,0 +1,24 @@
+.row { display: grid; grid-template-columns: 10px 217px 105px 310px auto; align-items: start; gap: 16px; }
+.drag { padding-top: 11px; }
+.control { width: 100%; min-height: 32px; padding: 0 8px; font: inherit; font-size: 14px; color: var(--color-n600-blue-zodiac); background: var(--color-n0-white); border: 1px solid var(--color-n300-haze); border-radius: 4px; }
+.chips { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; padding: 4px 8px; }
+.chips input { flex: 1; min-width: 40px; border: 0; outline: 0; font: inherit; font-size: 12px; background: transparent; }
+.chip { padding: 0 8px; border-radius: 8px; background: var(--color-dodger-light); font-size: 12px; line-height: 20px; white-space: nowrap; }
+.textarea { min-height: 94px; padding: 8px; resize: vertical; }
+.radios { display: flex; align-items: center; gap: 16px; height: 32px; font-size: 14px; }
+.radios label { display: flex; align-items: center; gap: 6px; }
+.invalid { border-color: var(--color-error); }
+.error { margin: 4px 0 0; font-size: 12px; color: var(--color-error); }
+.actions { display: flex; gap: 8px; padding-top: 6px; }
+.actions button, .trash, .collapse { background: none; border: 0; padding: 0; cursor: pointer; }
+.operator { position: relative; height: 64px; padding-left: 48px; display: flex; align-items: center; }
+.operator::before { content: ''; position: absolute; left: 99px; top: 0; bottom: 0; width: 1px; background: var(--color-n300-haze); }
+.toggle { position: relative; display: flex; height: 24px; border: 1px solid var(--color-n300-haze); border-radius: 12px; background: var(--color-n0-white); overflow: hidden; }
+.toggle button { width: 52px; border: 0; background: transparent; font: inherit; font-size: 12px; color: var(--color-n500-raven); cursor: pointer; }
+.toggle button[aria-pressed='true'] { background: var(--color-dodger-light); color: var(--color-dodger-blue); }
+.groupWrap { display: flex; align-items: flex-start; gap: 16px; }
+.group { position: relative; flex: 1; min-width: 0; padding: 20px; background: var(--color-n100-athens); border: 1px solid var(--color-n200-catskill); border-radius: 4px; }
+.collapse { position: absolute; top: 20px; right: 20px; }
+.trash { padding-top: 20px; }
+.summary { margin: 0; font-size: 12px; color: var(--color-n500-raven); }
+@media (max-width: 700px) { .row { grid-template-columns: 10px 1fr 1fr; } .valueCell { grid-column: 2 / -1; } .actions { grid-column: 2 / -1; } }

@@ -1,0 +1,9 @@
+.field { display: inline-flex; align-items: center; gap: var(--sds-size-space-300); cursor: pointer; }
+.box {
+  appearance: none; margin: 0; width: 16px; height: 16px; flex-shrink: 0;
+  background: var(--sds-color-background-default-default);
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-brand-tertiary);
+  border-radius: var(--sds-size-radius-100);
+}
+/* "Checked" isn't drawn in Figma yet, so this is a simple placeholder state */
+.box:checked { background: var(--sds-color-background-brand-default); box-shadow: inset 0 0 0 2px var(--sds-color-background-default-default); }
