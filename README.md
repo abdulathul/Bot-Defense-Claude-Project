@@ -6,6 +6,11 @@ Built from the "Login / Desktop 1440" frame in the Figma file, using the Simple 
     npm install
     npm run dev
 
+## Storybook
+    npm run storybook
+
+Build a static Storybook site with `npm run build-storybook`.
+
 ## Still to do
 - Replace `src/assets/icons/google.svg` and `key.svg` (placeholders) with the SVGs exported from Figma.
 - Connect `handleSubmit` in `src/pages/LoginPage.tsx` to your real sign-in API.
