@@ -50,7 +50,7 @@ export function LoginPage() {
             <TextLink href="#">Forgot password?</TextLink>
           </div>
 
-          <Button type="submit">Sign in</Button>
+          <Button type="submit" variant="primary">Sign in</Button>
 
           <div className={styles.divider}>or</div>
 

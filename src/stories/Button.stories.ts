@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { fn } from 'storybook/test';
 
-import { Button } from './Button';
+import { Button } from '../components/Button/Button';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -16,10 +16,17 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/arg-types
   argTypes: {
-    backgroundColor: { control: 'color' },
+    variant: { control: 'inline-radio' },
+    size: { control: 'inline-radio' },
+    style: { table: { disable: true } },
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#story-args
-  args: { onClick: fn() },
+  args: {
+    children: 'Button',
+    onClick: fn(),
+    style: { width: 'auto' },
+    size: 'medium',
+  },
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -28,27 +35,32 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
+    variant: 'primary',
   },
 };
 
-export const Secondary: Story = {
+export const Neutral: Story = {
   args: {
-    label: 'Button',
+    variant: 'neutral',
   },
 };
 
-export const Large: Story = {
+export const Subtle: Story = {
   args: {
-    size: 'large',
-    label: 'Button',
+    variant: 'subtle',
   },
 };
 
 export const Small: Story = {
   args: {
+    variant: 'primary',
     size: 'small',
-    label: 'Button',
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    variant: 'primary',
+    disabled: true,
   },
 };

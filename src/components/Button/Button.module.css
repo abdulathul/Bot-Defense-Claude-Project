@@ -1,18 +1,69 @@
 .button {
-  display: flex; align-items: center; justify-content: center; width: 100%;
-  gap: var(--sds-size-space-200); padding: var(--sds-size-space-300);
-  border: var(--sds-size-stroke-border) solid; border-radius: var(--sds-size-radius-200);
-  font: inherit; line-height: 1; cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  gap: var(--sds-size-space-200);
+  border: var(--sds-size-stroke-border) solid transparent;
+  border-radius: var(--sds-size-radius-200);
+  font-family: var(--sds-typography-body-font-family);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  cursor: pointer;
 }
-.primary {
+.medium {
+  height: 40px;
+  padding: 0 var(--sds-size-space-300);
+  font-size: var(--sds-typography-body-size-medium);
+  line-height: 24px;
+}
+.small {
+  height: 32px;
+  padding: 0 var(--sds-size-space-400);
+  font-size: var(--sds-typography-body-size-small);
+  line-height: 20px;
+}
+.fullWidth {
+  width: 100%;
+}
+.brand {
   background: var(--sds-color-background-brand-default);
   border-color: var(--sds-color-border-brand-default);
   color: var(--sds-color-text-brand-on-brand);
+}
+.primary {
+  background: var(--sds-color-background-primary-default);
+  color: var(--sds-color-text-primary-on-primary);
+}
+.neutral {
+  background: var(--sds-color-background-neutral-default);
+  border-color: var(--sds-color-border-neutral-default);
+  color: var(--sds-color-text-default-default);
+}
+.subtle {
+  background: transparent;
+  color: var(--sds-color-text-default-default);
 }
 .secondary {
   background: var(--sds-color-background-neutral-tertiary);
   border-color: var(--sds-color-border-neutral-secondary);
   color: var(--sds-color-text-default-default);
 }
-.button:hover { filter: brightness(0.95); }
-.button:disabled { opacity: 0.5; cursor: not-allowed; }
+.brand:not(:disabled):hover {
+  filter: brightness(0.95);
+}
+.primary:not(:disabled):hover {
+  background: var(--sds-color-background-primary-hover);
+}
+.neutral:not(:disabled):hover {
+  background: var(--sds-color-background-neutral-hover);
+}
+.subtle:not(:disabled):hover {
+  background: var(--sds-color-background-subtle-hover);
+  border-color: var(--sds-color-border-default-default);
+}
+.button:disabled {
+  background: var(--sds-color-background-disabled-default);
+  border-color: transparent;
+  color: var(--sds-color-text-disabled-default);
+  cursor: not-allowed;
+}
