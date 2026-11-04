@@ -25,6 +25,25 @@
 .fullWidth {
   width: 100%;
 }
+.iconOnly {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+}
+.iconOnly.small {
+  width: 36px;
+  height: 36px;
+}
+.iconOnly :global(svg) {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.iconOnly.small :global(svg) {
+  width: 16px;
+  height: 16px;
+}
 .brand {
   background: var(--sds-color-background-brand-default);
   border-color: var(--sds-color-border-brand-default);
@@ -38,6 +57,7 @@
   background: var(--sds-color-background-neutral-default);
   border-color: var(--sds-color-border-neutral-default);
   color: var(--sds-color-text-default-default);
+  border-radius: var(--sds-size-radius-200);
 }
 .subtle {
   background: transparent;
@@ -47,6 +67,29 @@
   background: var(--sds-color-background-neutral-tertiary);
   border-color: var(--sds-color-border-neutral-secondary);
   color: var(--sds-color-text-default-default);
+}
+.danger {
+  background: var(--color-error);
+  color: var(--color-n0-white);
+}
+.dangerSubtle {
+  background: transparent;
+  color: var(--color-error);
+}
+.iconOnly.primary,
+.iconOnly.brand,
+.iconOnly.danger {
+  border-radius: 50%;
+}
+.iconOnly.neutral {
+  border-radius: 50%;
+  background: var(--sds-color-background-neutral-default);
+  border-color: var(--sds-color-border-default-default);
+}
+.iconOnly.subtle,
+.iconOnly.dangerSubtle {
+  border-radius: 50%;
+  border-color: transparent;
 }
 .brand:not(:disabled):hover {
   filter: brightness(0.95);
@@ -60,6 +103,13 @@
 .subtle:not(:disabled):hover {
   background: var(--sds-color-background-subtle-hover);
   border-color: var(--sds-color-border-default-default);
+}
+.danger:not(:disabled):hover {
+  filter: brightness(0.85);
+}
+.dangerSubtle:not(:disabled):hover {
+  background: var(--color-danger-subtle-hover);
+  border-color: var(--color-error);
 }
 .button:disabled {
   background: var(--sds-color-background-disabled-default);

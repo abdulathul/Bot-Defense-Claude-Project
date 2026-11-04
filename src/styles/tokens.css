@@ -57,6 +57,7 @@
   --color-dodger-light: #dbe2ff;
   --color-brand: #e4002b;
   --color-error: var(--color-brand);
+  --color-danger-subtle-hover: #fde8e8;
   /* Not read from Figma, estimated from the screenshot: confirm with your design */
   --color-link: #4a67f5;
   --color-badge-new: #7b61d9;

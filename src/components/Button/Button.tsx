@@ -2,9 +2,10 @@ import type { ButtonHTMLAttributes } from 'react';
 import styles from './Button.module.css';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  variant?: 'brand' | 'primary' | 'neutral' | 'subtle' | 'secondary';
+  variant?: 'brand' | 'primary' | 'neutral' | 'subtle' | 'secondary' | 'danger' | 'dangerSubtle';
   size?: 'medium' | 'small';
   fullWidth?: boolean;
+  iconOnly?: boolean;
   /** URL of a 16px icon shown before the label */
   icon?: string;
 };
@@ -13,6 +14,7 @@ export function Button({
   variant = 'brand',
   size = 'medium',
   fullWidth = true,
+  iconOnly = false,
   icon,
   children,
   className = '',
@@ -23,6 +25,7 @@ export function Button({
     styles[variant],
     styles[size],
     fullWidth && styles.fullWidth,
+    iconOnly && styles.iconOnly,
     className,
   ]
     .filter(Boolean)
