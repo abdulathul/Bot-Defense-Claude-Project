@@ -1,0 +1,173 @@
+.card {
+  box-sizing: border-box;
+  width: 240px;
+  overflow: hidden;
+  border: 1px solid var(--sds-color-border-default-default);
+  border-radius: 8px;
+  background: var(--sds-color-background-default-default);
+  color: var(--sds-color-text-default-default);
+  font-family: var(--sds-typography-body-font-family);
+}
+
+.productCard {
+  padding: 16px;
+}
+
+.productImage {
+  width: 100%;
+  height: 248px;
+  overflow: hidden;
+  background: var(--sds-color-background-subtle-hover);
+}
+
+.productImage svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.productText {
+  margin-top: 16px;
+}
+
+.productText h2,
+.reviewText h2 {
+  margin: 0;
+  color: var(--sds-color-text-brand-default);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.productPrice {
+  margin: 8px 0 0;
+  color: var(--sds-color-text-brand-default);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.productDescription {
+  margin: 8px 0 0;
+  color: var(--sds-color-text-neutral-tertiary);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.reviewCard {
+  display: flex;
+  min-height: 217px;
+  flex-direction: column;
+  padding: 20px 24px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  color: var(--sds-color-text-default-default);
+}
+
+.stars svg {
+  width: 20px;
+  height: 20px;
+}
+
+.reviewText {
+  margin-top: 20px;
+}
+
+.reviewText p {
+  margin: 0;
+  color: var(--sds-color-text-brand-default);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.reviewerName,
+.reviewerDate,
+.authorTitle,
+.authorDescription {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.reviewerName,
+.authorTitle {
+  color: var(--sds-color-text-neutral-tertiary);
+  font-weight: 600;
+}
+
+.reviewerDate,
+.authorDescription {
+  color: var(--sds-color-text-default-tertiary);
+}
+
+.statsCard {
+  display: flex;
+  min-height: 167px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: var(--sds-color-text-brand-default);
+  text-align: center;
+}
+
+.clock {
+  width: 40px;
+  height: 40px;
+  color: var(--sds-color-text-default-default);
+}
+
+.clock svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.statValue {
+  margin: 20px 0 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.statDescription {
+  margin: 4px 0 0;
+  color: var(--sds-color-text-brand-default);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.testimonialCard {
+  min-height: 147px;
+  padding: 20px 24px;
+  border-color: #31a96d;
+}
+
+.testimonialCard blockquote {
+  margin: 0;
+  color: var(--sds-color-text-brand-default);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.testimonialAuthor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.slot {
+  min-height: 167px;
+}
