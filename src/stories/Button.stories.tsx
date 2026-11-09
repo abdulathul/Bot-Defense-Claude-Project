@@ -74,9 +74,37 @@ export const Small: Story = {
   },
 };
 
+export const NeutralSmall: Story = {
+  args: {
+    variant: 'neutral',
+    size: 'small',
+  },
+};
+
+export const SubtleSmall: Story = {
+  args: {
+    variant: 'subtle',
+    size: 'small',
+  },
+};
+
 export const Disabled: Story = {
   args: {
     variant: 'primary',
+    disabled: true,
+  },
+};
+
+export const NeutralDisabled: Story = {
+  args: {
+    variant: 'neutral',
+    disabled: true,
+  },
+};
+
+export const SubtleDisabled: Story = {
+  args: {
+    variant: 'subtle',
     disabled: true,
   },
 };
@@ -95,6 +123,14 @@ export const DangerSubtle: Story = {
   },
 };
 
+export const DangerSubtleSmall: Story = {
+  args: {
+    variant: 'dangerSubtle',
+    size: 'small',
+    children: 'Delete',
+  },
+};
+
 export const DangerSmall: Story = {
   args: {
     variant: 'danger',
@@ -106,6 +142,14 @@ export const DangerSmall: Story = {
 export const DangerDisabled: Story = {
   args: {
     variant: 'danger',
+    disabled: true,
+    children: 'Delete',
+  },
+};
+
+export const DangerSubtleDisabled: Story = {
+  args: {
+    variant: 'dangerSubtle',
     disabled: true,
     children: 'Delete',
   },
@@ -148,9 +192,49 @@ export const IconSmall: Story = {
   },
 };
 
+export const IconNeutralSmall: Story = {
+  args: {
+    variant: 'neutral',
+    size: 'small',
+    iconOnly: true,
+    children: <StarIcon />,
+    'aria-label': 'Add to favorites',
+  },
+};
+
+export const IconSubtleSmall: Story = {
+  args: {
+    variant: 'subtle',
+    size: 'small',
+    iconOnly: true,
+    children: <StarIcon />,
+    'aria-label': 'Add to favorites',
+  },
+};
+
 export const IconDisabled: Story = {
   args: {
     variant: 'primary',
+    iconOnly: true,
+    children: <StarIcon />,
+    'aria-label': 'Add to favorites',
+    disabled: true,
+  },
+};
+
+export const IconNeutralDisabled: Story = {
+  args: {
+    variant: 'neutral',
+    iconOnly: true,
+    children: <StarIcon />,
+    'aria-label': 'Add to favorites',
+    disabled: true,
+  },
+};
+
+export const IconSubtleDisabled: Story = {
+  args: {
+    variant: 'subtle',
     iconOnly: true,
     children: <StarIcon />,
     'aria-label': 'Add to favorites',

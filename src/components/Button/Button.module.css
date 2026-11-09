@@ -18,7 +18,7 @@
 }
 .small {
   height: 32px;
-  padding: 0 var(--sds-size-space-400);
+  padding: 0 var(--sds-size-space-300);
   font-size: var(--sds-typography-body-size-small);
   line-height: 20px;
 }
@@ -50,13 +50,14 @@
   color: var(--sds-color-text-brand-on-brand);
 }
 .primary {
-  background: var(--sds-color-background-primary-default);
-  color: var(--sds-color-text-primary-on-primary);
+  background: var(--sds-color-background-brand-default);
+  border-color: var(--sds-color-border-brand-default);
+  color: var(--sds-color-text-brand-on-brand);
 }
 .neutral {
-  background: var(--sds-color-background-neutral-default);
-  border-color: var(--sds-color-border-neutral-default);
-  color: var(--sds-color-text-default-default);
+  background: var(--sds-color-background-default-default);
+  border-color: var(--sds-color-border-brand-default);
+  color: var(--sds-color-text-brand-default);
   border-radius: var(--sds-size-radius-200);
 }
 .subtle {
@@ -95,10 +96,11 @@
   filter: brightness(0.95);
 }
 .primary:not(:disabled):hover {
-  background: var(--sds-color-background-primary-hover);
+  background: var(--sds-color-background-brand-hover);
+  border-color: var(--sds-color-background-brand-hover);
 }
 .neutral:not(:disabled):hover {
-  background: var(--sds-color-background-neutral-hover);
+  background: var(--sds-color-background-brand-subtle-hover);
 }
 .subtle:not(:disabled):hover {
   background: var(--sds-color-background-subtle-hover);
