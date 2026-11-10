@@ -1,0 +1,196 @@
+.field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: var(--sds-size-space-200);
+  font-family: var(--sds-typography-body-font-family);
+}
+
+.label {
+  color: var(--sds-color-text-brand-default);
+  font-size: var(--sds-typography-body-size-small);
+  line-height: 20px;
+}
+
+.control {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: 40px;
+  padding: 0 var(--sds-size-space-300);
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+  border-radius: var(--sds-size-radius-200);
+  background: var(--sds-color-background-default-default);
+  color: var(--sds-color-text-default-default);
+  font: inherit;
+  font-size: var(--sds-typography-body-size-medium);
+}
+
+.control::placeholder { color: var(--sds-color-text-default-tertiary); }
+.control:hover:not(:disabled) { border-color: var(--sds-color-border-brand-default); }
+.control:focus-visible, .segment:focus-visible {
+  border-color: var(--sds-color-border-brand-default);
+  outline: 2px solid var(--sds-color-background-brand-subtle-hover);
+  outline-offset: 1px;
+}
+.control:disabled {
+  border-color: var(--sds-color-border-default-default);
+  background: var(--sds-color-background-disabled-default);
+  color: var(--sds-color-text-disabled-default);
+  cursor: not-allowed;
+}
+.control:disabled::placeholder { color: var(--sds-color-text-disabled-default); }
+.invalid, .invalid:hover:not(:disabled), .dateSegments.invalid { border-color: var(--color-error); }
+
+.helper, .error {
+  margin: 0;
+  font-size: var(--sds-typography-body-size-small);
+  line-height: 20px;
+}
+.helper { color: var(--sds-color-text-neutral-tertiary); }
+.error { color: var(--color-error); }
+
+.selectWrap, .searchWrap {
+  position: relative;
+  display: block;
+}
+.select { appearance: none; padding-right: 36px; }
+.chevron {
+  position: absolute;
+  top: 50%;
+  right: var(--sds-size-space-300);
+  width: 16px;
+  height: 16px;
+  color: var(--sds-color-text-brand-default);
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.textarea {
+  min-height: 96px;
+  padding: var(--sds-size-space-300);
+  line-height: 24px;
+  resize: vertical;
+}
+
+.date { color-scheme: light; }
+.date:disabled { color-scheme: light; }
+
+.dateSegments {
+  display: flex;
+  width: max-content;
+  max-width: 100%;
+  gap: var(--sds-size-space-100);
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--sds-size-radius-200);
+}
+.segment {
+  box-sizing: border-box;
+  width: 54px;
+  height: 40px;
+  padding: 0 var(--sds-size-space-200);
+  border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
+  border-radius: var(--sds-size-radius-200);
+  background: var(--sds-color-background-default-default);
+  color: var(--sds-color-text-default-default);
+  font: inherit;
+  text-align: center;
+}
+.segment:last-child { width: 72px; }
+.segment::placeholder { color: var(--sds-color-text-default-tertiary); }
+.segment:disabled {
+  background: var(--sds-color-background-disabled-default);
+  color: var(--sds-color-text-disabled-default);
+  cursor: not-allowed;
+}
+.dateSegments.disabled { cursor: not-allowed; }
+.dateSegments.invalid .segment { border-color: var(--color-error); }
+
+.search { padding-right: 40px; }
+.search::-webkit-search-cancel-button { cursor: pointer; }
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  right: var(--sds-size-space-300);
+  width: 16px;
+  height: 16px;
+  color: var(--sds-color-text-default-default);
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.range {
+  width: 100%;
+  margin: var(--sds-size-space-200) 0;
+  accent-color: var(--sds-color-background-brand-default);
+  cursor: pointer;
+}
+.range:disabled { accent-color: var(--sds-color-text-disabled-default); cursor: not-allowed; }
+
+.switchField, .choice {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--sds-size-space-300);
+  color: var(--sds-color-text-brand-default);
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-small);
+  line-height: 20px;
+  cursor: pointer;
+}
+.switchInput {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+.switchTrack {
+  display: inline-flex;
+  width: 36px;
+  height: 20px;
+  flex: 0 0 36px;
+  align-items: center;
+  padding: 2px;
+  border-radius: 999px;
+  background: var(--sds-color-background-neutral-default);
+  transition: background-color 120ms ease;
+}
+.switchThumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--sds-color-background-default-default);
+  box-shadow: 0 1px 2px rgb(0 0 0 / 18%);
+  transition: transform 120ms ease;
+}
+.switchInput:checked + .switchTrack { background: var(--sds-color-background-brand-default); }
+.switchInput:checked + .switchTrack .switchThumb { transform: translateX(16px); }
+.switchInput:focus-visible + .switchTrack { outline: 2px solid var(--sds-color-background-brand-subtle-hover); outline-offset: 2px; }
+.switchInput:disabled + .switchTrack { background: var(--sds-color-background-disabled-default); cursor: not-allowed; }
+.switchInput:disabled ~ .choiceText { color: var(--sds-color-text-disabled-default); }
+.choiceText { display: flex; flex-direction: column; gap: var(--sds-size-space-100); }
+
+.choiceGroup {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: var(--sds-size-space-300);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: var(--sds-typography-body-font-family);
+}
+.choiceGroup legend { margin-bottom: var(--sds-size-space-100); padding: 0; }
+.choice input {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin: 2px 0 0;
+  accent-color: var(--sds-color-background-brand-default);
+}
+.choice input:focus-visible { outline: 2px solid var(--sds-color-background-brand-subtle-hover); outline-offset: 2px; }
+.choice input:disabled { cursor: not-allowed; }
+.choice:has(input:disabled) { color: var(--sds-color-text-disabled-default); cursor: not-allowed; }
