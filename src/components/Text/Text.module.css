@@ -1,0 +1,126 @@
+.text {
+  margin: 0;
+  color: var(--sds-color-text-default-default);
+  font-family: var(--sds-typography-body-font-family);
+}
+
+.start {
+  text-align: start;
+}
+
+.center {
+  text-align: center;
+}
+
+.end {
+  text-align: end;
+}
+
+.title-hero {
+  color: #3153d8;
+  font-size: clamp(2.5rem, 7vw, var(--sds-typography-title-hero-size));
+  font-weight: var(--sds-typography-title-font-weight);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.title-page {
+  color: #3153d8;
+  font-size: clamp(2rem, 5vw, var(--sds-typography-title-page-size-base));
+  font-weight: var(--sds-typography-title-font-weight);
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+.title {
+  color: #3153d8;
+  font-size: 2rem;
+  font-weight: var(--sds-typography-title-font-weight);
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: #626b7a;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.subheading {
+  color: #626b7a;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.body {
+  font-size: var(--sds-typography-body-size-medium);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  line-height: 1.5;
+}
+
+.emphasis {
+  font-size: inherit;
+  font-style: italic;
+  line-height: inherit;
+}
+
+.strong {
+  font-size: inherit;
+  font-weight: 700;
+  line-height: inherit;
+}
+
+.link {
+  color: #3153d8;
+  font-size: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.link:hover {
+  color: #2745b8;
+}
+
+.link:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.code {
+  padding: 0.1em 0.35em;
+  border-radius: var(--sds-size-radius-100);
+  background: #f0f2f5;
+  color: #26334c;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}
+
+.list {
+  display: grid;
+  gap: var(--sds-size-space-200);
+  margin: 0;
+  padding-inline-start: 1.5em;
+  color: var(--sds-color-text-default-default);
+  font-family: var(--sds-typography-body-font-family);
+  font-size: var(--sds-typography-body-size-medium);
+  line-height: 1.5;
+}
+
+.unordered {
+  list-style-type: disc;
+}
+
+.ordered {
+  list-style-type: decimal;
+}
+
+.listItem {
+  padding-inline-start: var(--sds-size-space-100);
+}

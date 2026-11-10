@@ -1,0 +1,322 @@
+.page {
+  min-height: 100vh;
+  padding: clamp(16px, 4vw, 48px);
+  background: #f7f8fa;
+  font-family: var(--sds-typography-body-font-family);
+}
+
+.samples {
+  display: grid;
+  width: min(100%, 1120px);
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.themeSample {
+  --sds-color-background-default-default: #fff;
+  --sds-color-background-subtle-hover: #f5f5f5;
+  --sds-color-background-neutral-tertiary: #e3e3e3;
+  --sds-color-background-brand-subtle-hover: #dbe5ff;
+  --sds-color-text-default-default: #1e1e1e;
+  --sds-color-text-brand-default: #3153d8;
+  --sds-color-text-neutral-tertiary: #626b7a;
+  --sds-color-text-default-tertiary: #626b7a;
+  --sds-color-text-disabled-default: #767676;
+  --sds-color-border-default-default: #d9d9d9;
+  --sds-color-border-brand-default: #3153d8;
+  --sds-color-border-neutral-secondary: #767676;
+  --sds-color-background-brand-default: #4f73ff;
+  --sds-color-background-brand-hover: #3f61e8;
+  --sds-color-text-brand-on-brand: #fff;
+  --sds-color-text-primary-on-primary: #fff;
+  --sds-color-background-disabled-default: #e6e6e6;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.dark {
+  --sds-color-background-default-default: #242424;
+  --sds-color-background-subtle-hover: #333;
+  --sds-color-background-neutral-tertiary: #3d3d3d;
+  --sds-color-background-brand-subtle-hover: #343c57;
+  --sds-color-text-default-default: #f5f5f5;
+  --sds-color-text-brand-default: #aab9ff;
+  --sds-color-text-neutral-tertiary: #c3c3c3;
+  --sds-color-text-default-tertiary: #c3c3c3;
+  --sds-color-text-disabled-default: #c3c3c3;
+  --sds-color-border-default-default: #555;
+  --sds-color-border-brand-default: #aab9ff;
+  --sds-color-border-neutral-secondary: #8c8c8c;
+  --sds-color-background-brand-default: #4f73ff;
+  --sds-color-background-brand-hover: #7290ff;
+  --sds-color-text-brand-on-brand: #fff;
+  --sds-color-text-primary-on-primary: #fff;
+  --sds-color-background-disabled-default: #454545;
+  border-color: #292929;
+  background: #1d1d1d;
+  color: #f5f5f5;
+}
+
+.themeTitle {
+  margin: 0;
+  padding: 8px 12px;
+  background: #fff;
+  color: #1e1e1e;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dark .themeTitle {
+  background: #1d1d1d;
+  color: #f5f5f5;
+}
+
+.canvas {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  background: var(--sds-color-background-default-default);
+  color: var(--sds-color-text-default-default);
+}
+
+.sampleHeader {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 12px;
+  border: 1px solid var(--sds-color-border-default-default);
+  border-radius: 6px;
+}
+
+.brand {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: var(--sds-color-text-default-default);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.headerActions {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 6px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.15fr) minmax(220px, 0.75fr);
+  align-items: start;
+  gap: 12px;
+}
+
+.leftColumn,
+.middleColumn,
+.rightColumn {
+  display: grid;
+  min-width: 0;
+  align-content: start;
+  gap: 12px;
+}
+
+.card,
+.sampleFooter,
+.paginationCard,
+.promoCard {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--sds-color-border-default-default);
+  border-radius: 6px;
+  background: var(--sds-color-background-default-default);
+  color: var(--sds-color-text-default-default);
+}
+
+.sampleFooter {
+  display: grid;
+  min-height: 180px;
+  grid-template-columns: 30px 1fr;
+  align-content: start;
+  gap: 14px;
+}
+
+.socialLinks {
+  display: flex;
+  align-items: start;
+  gap: 6px;
+}
+
+.socialLinks a {
+  color: var(--sds-color-text-default-default);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footerLinkColumns {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.footerLinkColumns div {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.footerLinkColumns strong {
+  margin-bottom: 4px;
+}
+
+.footerLinkColumns a {
+  color: var(--sds-color-text-brand-default);
+  text-decoration: none;
+}
+
+.paginationCard {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.dialogCard {
+  padding: 12px;
+  background: #f7f8fa;
+}
+
+.dialogCard > section {
+  margin: 0 auto;
+}
+
+.dark .dialogCard {
+  background: #101010;
+}
+
+.promoCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.promoIcon {
+  color: var(--sds-color-text-brand-default);
+  font-size: 20px;
+}
+
+.promoCard div {
+  display: grid;
+  flex: 1;
+  gap: 5px;
+}
+
+.promoCard strong {
+  color: var(--sds-color-text-brand-default);
+  font-size: 13px;
+}
+
+.promoCard p,
+.cardIntro {
+  margin: 0;
+  color: var(--sds-color-text-neutral-tertiary);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.cardTitle {
+  margin: 0 0 4px;
+  color: var(--sds-color-text-default-default);
+  font-size: 15px;
+}
+
+.form {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.statusTags {
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid var(--sds-color-border-default-default);
+  border-radius: 6px;
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rightColumn {
+    grid-column: span 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rightColumn > :last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 12px;
+  }
+
+  .canvas {
+    padding: 8px;
+  }
+
+  .sampleHeader {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sampleHeader > :first-child {
+    margin-right: auto;
+  }
+
+  .sampleHeader :global(nav) {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .sampleHeader :global(nav a) {
+    font-size: 12px;
+  }
+
+  .dashboard,
+  .rightColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .rightColumn,
+  .rightColumn > :last-child {
+    grid-column: auto;
+  }
+
+  .promoCard {
+    flex-wrap: wrap;
+  }
+}
