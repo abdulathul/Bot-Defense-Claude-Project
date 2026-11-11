@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+import { fn } from 'storybook/test';
 import { Calendar } from '../components/Calendar/Calendar';
 
 const september2025 = new Date(2025, 8, 1);
@@ -26,6 +27,8 @@ const meta = {
     initialDate: september2025,
     selectionMode: 'range',
     initialSelectedRange: range,
+    onDateSelect: fn(),
+    onRangeSelect: fn(),
   },
 } satisfies Meta<typeof Calendar>;
 
